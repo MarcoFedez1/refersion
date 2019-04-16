@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="6" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="34210" started-at="2019-04-16T17:24:42Z" finished-at="2019-04-16T17:25:16Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="34210" started-at="2019-04-16T17:24:42Z" finished-at="2019-04-16T17:25:16Z">
+      <class name="Tests.rTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:Tests.rTest@5dfcfece]" name="setup" is-config="true" duration-ms="15536" started-at="2019-04-16T11:24:42Z" finished-at="2019-04-16T11:24:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="DisplaySignInMenu()[pri:0, instance:Tests.rTest@5dfcfece]" name="DisplaySignInMenu" duration-ms="637" started-at="2019-04-16T11:24:57Z" description="Verify Sign in menu is displayed" finished-at="2019-04-16T11:24:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DisplaySignInMenu -->
+        <test-method status="PASS" signature="MerchantLogInPage()[pri:0, instance:Tests.rTest@5dfcfece]" name="MerchantLogInPage" duration-ms="911" started-at="2019-04-16T11:24:58Z" description="Verify Sign in page is displayed" finished-at="2019-04-16T11:24:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MerchantLogInPage -->
+        <test-method status="PASS" signature="SignIn()[pri:0, instance:Tests.rTest@5dfcfece]" name="SignIn" duration-ms="5928" started-at="2019-04-16T11:24:59Z" description="Verify that the merchant is available to sign in" finished-at="2019-04-16T11:25:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignIn -->
+        <test-method status="PASS" signature="AffiliateSignUp()[pri:0, instance:Tests.rTest@5dfcfece]" name="AffiliateSignUp" duration-ms="399" started-at="2019-04-16T11:25:05Z" description="Verify that Affiliate Sign Up options is displayed" finished-at="2019-04-16T11:25:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AffiliateSignUp -->
+        <test-method status="PASS" signature="SelectOffer()[pri:0, instance:Tests.rTest@5dfcfece]" name="SelectOffer" duration-ms="2970" started-at="2019-04-16T11:25:05Z" description="Verify that user is available to select offer" finished-at="2019-04-16T11:25:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SelectOffer -->
+        <test-method status="FAIL" signature="Fill_program_application()[pri:0, instance:Tests.rTest@5dfcfece]" name="Fill_program_application" duration-ms="7790" started-at="2019-04-16T11:25:08Z" description="Fill Program Application" finished-at="2019-04-16T11:25:16Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate an element using xpath=//input[@type='submit']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Marcos-iMac.local', ip: '192.168.0.3', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.2', java.version: '1.8.0_131'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//input[@type='submit']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Marcos-iMac.local', ip: '192.168.0.3', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.2', java.version: '1.8.0_131'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at Pages.Aplication.setApplication(Aplication.java:51)
+	at Tests.rTest.Fill_program_application(rTest.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Fill_program_application -->
+      </class> <!-- Tests.rTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
